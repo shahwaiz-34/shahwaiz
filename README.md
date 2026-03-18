@@ -17,10 +17,24 @@ Professional Frontend Developer dedicated to building **premium, high-performanc
 
 ### 🌟 Key Projects
 
+#### [ALLBIRDS - E-commerce Platform](https://github.com/shahwaiz-34/allbirds)
+* **Description:** A high-performance, visually stunning eCommerce frontend built with a focus on user experience.
+* **Features:** Dynamic product feeds via swiper react-router-dom react-icon.
+* **Tech:** React, Tailwind CSS, Vite.
+
+.
+
 #### [MyShop - E-commerce Platform](https://github.com/shahwaiz-34/myshop)
 * **Description:** A high-performance, multi-page e-commerce solution.
 * **Features:** Dynamic product feeds via DummyJSON API, cart persistence logic, and seamless navigation.
 * **Tech:** React, Tailwind CSS, Vite.
+
+
+#### [modren - Landing - page](https://github.com/shahwaiz-34/modern-landing-2026)
+* **Description:** A high-performance, multi-page e-commerce solution.
+* **Features:** A responsive landing page built with React, Tailwind v4, and Framer Motion.
+* **Tech:** React, Tailwind CSS, framer, Vite.
+
 
 #### [Professional Portfolio](https://github.com/shahwaiz-34)
 * **Description:** A minimalist, Dark-Academia inspired showcase of my professional journey.
