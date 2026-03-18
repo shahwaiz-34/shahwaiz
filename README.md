@@ -22,7 +22,6 @@ Professional Frontend Developer dedicated to building **premium, high-performanc
 * **Features:** Dynamic product feeds via swiper react-router-dom react-icon.
 * **Tech:** React, Tailwind CSS, Vite.
 
-.
 
 #### [MyShop - E-commerce Platform](https://github.com/shahwaiz-34/myshop)
 * **Description:** A high-performance, multi-page e-commerce solution.
