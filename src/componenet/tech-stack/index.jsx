@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import SubHeader from '../Header/index'
 import {
   Bug,
   SearchCode,
@@ -113,12 +114,13 @@ const TechStackSection = () => {
   ];
 
   return (
-  
+     
+    <div>
 
-
+     <SubHeader upperText={"Expertise"} lowerText={"Tech Stack & Services"}/>
     <section
       id="services"
-      className="min-h-screen w-full flex flex-col justify-center items-center py-20 px-4 sm:px-6 lg:px-16 font-sans text-white relative overflow-hidden"
+      className="min-h-screen w-full flex flex-col justify-center items-center  px-4 sm:px-6 lg:px-14 font-sans text-white relative overflow-hidden"
     >
       {/* Background Noise/Overlay */}
       <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none"></div>
@@ -127,7 +129,7 @@ const TechStackSection = () => {
       <div className="max-w-[1400px] w-full mx-auto relative z-10">
         
         {/* Header Section */}
-        <header className="mb-12 md:mb-20 text-left">
+        {/* <header className="mb-12 md:mb-20 text-left">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -145,7 +147,7 @@ const TechStackSection = () => {
               </p>
             </div>
           </motion.div>
-        </header>
+        </header> */}
 
         {/* Cards Grid */}
         <motion.div
@@ -252,7 +254,7 @@ const TechStackSection = () => {
         </motion.div>
       </div>
     </section>
-
+</div>
   );
 };
 

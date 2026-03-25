@@ -54,7 +54,7 @@ export default function Hero (){
       </div>
 
     
-<div className="w-full max-w-[1400px] mx-auto px-3 md:px-16 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center relative z-10 overflow-hidden lg:overflow-visible">
+<div className="w-full max-w-[1400px] mx-auto px-3 md:px-14 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center relative z-10 overflow-hidden lg:overflow-visible">
   
   {/* LEFT: TEXT CONTENT */}
   <div className="space-y-8 w-full">
@@ -101,20 +101,14 @@ export default function Hero (){
       Blending art with code to build immersive digital experiences.
     </motion.p>
 
-    <motion.div 
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.6 }}
-      className="flex flex-col sm:flex-row gap-4"
-    >
-      <button className="bg-indigo-600 text-white px-8 py-4 rounded-full font-bold hover:bg-indigo-700 transition-all flex items-center justify-center gap-2">
-       <a href="#projects"> View Projects <Code2 size={18} /></a>
-      </button>
-      <button className="px-8 py-4 rounded-full font-bold text-white border border-white/20 hover:bg-white/10 transition-all">
-               <a href="#contact"> contact <Code2 size={18} /></a>
-
-      </button>
-    </motion.div>
+    <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <a href="#projects" className="bg-indigo-600 text-white px-8 py-4 rounded-full font-bold hover:bg-indigo-700 transition-all text-center flex items-center justify-center gap-2">
+              View Projects <Code2 size={18} />
+            </a>
+            <a href="#contact" className="px-8 py-4 rounded-full font-bold text-white border border-white/20 hover:bg-white/10 transition-all text-center">
+              Contact Me
+            </a>
+          </div>
   </div>
 
   {/* RIGHT: IMAGE SLIDER / VISUAL */}

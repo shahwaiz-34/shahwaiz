@@ -30,7 +30,7 @@ export default function PortFooter() {
   };
 
   return (
-    <div className="min-h-[400px] flex items-end justify-center pb-8 font-sans relative">
+    <div className="min-h-[400px] flex items-end justify-center p-3  sm:px-6  lg:px-14 pb-8 font-sans relative">
       <div className="absolute inset-0 transform rotate-180 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
 
       <motion.footer
@@ -39,7 +39,7 @@ export default function PortFooter() {
         whileInView="visible"
         viewport={{ once: true }}
         className="w-full max-w-7xl bg-[#0f0f1a] rounded-[2rem] md:rounded-[3rem] p-8 md:p-16 relative 
-                   border border-purple-500/20 shadow-[0_0_60px_-15px_rgba(139,92,246,0.3)] m-3"
+                   border border-purple-500/20 shadow-[0_0_60px_-15px_rgba(139,92,246,0.3)]"
       >
         {/* Back to Top Button */}
         <motion.button
@@ -115,7 +115,7 @@ export default function PortFooter() {
               <div className="bg-purple-500/20 p-2 rounded-xl text-purple-400 group-hover:bg-purple-500 group-hover:text-white transition-all">
                 <Mail size={20} />
               </div>
-              <span className="text-gray-300 text-[12px] font-medium">
+              <span className="text-gray-300 text-[11px] font-medium">
                 shahwaizgoraya10@gmail.com
               </span>
             </motion.a>

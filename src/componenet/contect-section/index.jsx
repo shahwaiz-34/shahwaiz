@@ -11,6 +11,7 @@ import {
   FaPhone,
   FaMapMarkerAlt,
 } from "react-icons/fa";
+import SabHeader from "../Header";
 
 const ContactSection = () => {
   const formRef = useRef();
@@ -61,9 +62,13 @@ const ContactSection = () => {
   };
 
   return (
+
+<div> 
+
+  
     <section
       id="contact"
-      className="min-h-screen  text-white p-3 md:p-12 flex flex-col justify-center items-center relative"
+      className="min-h-screen  text-white p-3 md:py-12 lg:px-14 flex flex-col justify-center items-center relative"
     >
       <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
 
@@ -74,16 +79,16 @@ const ContactSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="ml-2.5"
+            className="lg:ml-2.5"
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl min-h-[1.2em] font-black tracking-tight mb-3 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 leading-tight">
-              Get In Touch{" "}
+              Get In Touch
             </h1>
 
             <div className="flex items-center gap-3">
               <div className="h-[2px] w-8 md:w-12 bg-purple-500"></div>
               <p className="text-purple-400 uppercase tracking-widest text-xs md:text-sm font-bold">
-                Contect Me
+                Contact Me
               </p>
             </div>
           </motion.div>
@@ -228,6 +233,8 @@ const ContactSection = () => {
         </motion.div>
       </div>
     </section>
+
+  </div>
   );
 };
 

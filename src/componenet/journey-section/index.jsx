@@ -46,7 +46,7 @@ const JourneyTimeline = () => {
 
     <section
       id="about"
-      className="relative min-h-screen w-full flex flex-col justify-center items-center py-20 px-4 sm:px-6 lg:px-16 font-sans text-white overflow-hidden"
+      className="relative min-h-screen w-full flex flex-col justify-center items-center py-13 px-4 sm:px-6  lg:px-14 font-sans text-white overflow-hidden"
     >
       {/* Background Texture */}
       <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none"></div>
@@ -61,8 +61,9 @@ const JourneyTimeline = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
+            className="ml-1.5 md:ml-0.5"
           >
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-gray-600 leading-[1.1]">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-7xl font-black tracking-tighter mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-gray-600 leading-[1.1]">
               My Journey
             </h1>
 
@@ -76,7 +77,7 @@ const JourneyTimeline = () => {
         </header>
 
         {/* Timeline Grid */}
-        <div className="relative flex flex-col gap-6 lg:flex-row items-stretch justify-center">
+        <div className="relative flex flex-col gap-5 lg:flex-row items-stretch justify-center">
           {timelineData.map((item, index) => (
             <React.Fragment key={item.year}>
               <motion.div
