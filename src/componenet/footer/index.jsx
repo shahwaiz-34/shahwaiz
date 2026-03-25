@@ -30,7 +30,7 @@ export default function PortFooter() {
   };
 
   return (
-    <div className="min-h-[400px] flex items-end justify-center p-3  sm:px-6  lg:px-14 pb-8 font-sans relative">
+    <div className="min-h-[400px] flex items-end justify-center p-4  sm:px-6  lg:px-14 pb-8 font-sans relative">
       <div className="absolute inset-0 transform rotate-180 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
 
       <motion.footer

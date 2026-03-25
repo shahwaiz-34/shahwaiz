@@ -73,7 +73,7 @@ const ContactSection = () => {
       <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
 
       <div className="max-w-7xl mx-auto w-full">
-        <header className="relative z-10 mb-10 md:mb-15 px-6 sm:px-0">
+        <header className="relative z-10 mb-10 md:mb-15 p-6 sm:px-0">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
