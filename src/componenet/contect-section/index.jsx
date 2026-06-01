@@ -65,35 +65,15 @@ const ContactSection = () => {
 
 <div> 
 
+    <SabHeader upperText={"Get In Touch"} lowerText={"Contact Me"} />
   
     <section
       id="contact"
-      className="min-h-screen  text-white p-3 md:py-12 lg:px-14 flex flex-col justify-center items-center relative"
+      className="min-h-screen text-white px-4 sm:px-6 lg:px-14 pb-24 flex flex-col justify-center items-center relative"
     >
       <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
 
-      <div className="max-w-7xl mx-auto w-full">
-        <header className="relative z-10 mb-10 md:mb-15 p-6 sm:px-0">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="lg:ml-2.5"
-          >
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl min-h-[1.2em] font-black tracking-tight mb-3 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 leading-tight">
-              Get In Touch
-            </h1>
-
-            <div className="flex items-center gap-3">
-              <div className="h-[2px] w-8 md:w-12 bg-purple-500"></div>
-              <p className="text-purple-400 uppercase tracking-widest text-xs md:text-sm font-bold">
-                Contact Me
-              </p>
-            </div>
-          </motion.div>
-        </header>
-
+      <div className="max-w-[1400px] mx-auto w-full">
         {/* Cards Grid */}
         <motion.div
           variants={containerVariants}

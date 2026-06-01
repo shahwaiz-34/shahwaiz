@@ -1,6 +1,7 @@
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ChevronRight, Globe, Zap } from "lucide-react";
+import SabHeader from "../Header";
 
 const timelineData = [
   {
@@ -40,41 +41,22 @@ const JourneyTimeline = () => {
 
   return (
 
+
+
     
 
-
+    <>
+    <SabHeader upperText={"My Journey"} lowerText={"Evolution of a Developer"} />
 
     <section
       id="about"
-      className="relative min-h-screen w-full flex flex-col justify-center items-center py-13 px-4 sm:px-6  lg:px-14 font-sans text-white overflow-hidden"
+      className="relative min-h-screen w-full flex flex-col justify-center items-center px-4 pb-24 sm:px-6 lg:px-14 font-sans text-white overflow-hidden"
     >
       {/* Background Texture */}
       <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none"></div>
 
       {/* Centered Content Wrapper */}
       <div className="max-w-[1400px] w-full mx-auto relative z-10">
-        
-        {/* Header */}
-        <header className="mb-12 md:mb-20 text-left">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="ml-1.5 md:ml-0.5"
-          >
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-7xl font-black tracking-tighter mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-gray-600 leading-[1.1]">
-              My Journey
-            </h1>
-
-            <div className="flex items-center gap-4">
-              <div className="h-[2px] w-12 bg-purple-500"></div>
-              <p className="text-purple-400 uppercase tracking-[0.2em] text-xs md:text-sm font-bold">
-                Evolution of a Developer
-              </p>
-            </div>
-          </motion.div>
-        </header>
 
         {/* Timeline Grid */}
         <div className="relative flex flex-col gap-5 lg:flex-row items-stretch justify-center">
@@ -145,6 +127,7 @@ const JourneyTimeline = () => {
         </div>
       </div>
     </section>
+    </>
 
 
 

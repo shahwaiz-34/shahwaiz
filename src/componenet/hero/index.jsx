@@ -32,7 +32,7 @@ const SocialIcon = ({ Icon, href }) => (
 // --- HERO SECTION ---
 
 export default function Hero (){
-  const roles = ["Front End Developer", "Figma to React ","Adobe XD to React", "React Specialist"];
+  const roles = ["Full Stack Developer", "Figma to Next.js ", "Database Architecture", "Full-Stack Web Apps"];
   const [index, setIndex] = useState(0);
 
   // Auto-rotate roles
@@ -54,7 +54,7 @@ export default function Hero (){
       </div>
 
     
-<div className="w-full max-w-[1400px] mx-auto px-3 md:px-14 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center relative z-10 overflow-hidden lg:overflow-visible">
+<div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-14 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center relative z-10 overflow-hidden lg:overflow-visible">
   
   {/* LEFT: TEXT CONTENT */}
   <div className="space-y-8 w-full">
@@ -97,8 +97,9 @@ export default function Hero (){
       transition={{ delay: 0.4 }}
       className="text-gray-400 text-lg md:text-xl max-w-xl leading-relaxed"
     >
-      I craft responsive, high-performance websites with modern technologies. 
-      Blending art with code to build immersive digital experiences.
+      I architect high-performance full-stack web applications that convert. 
+  By pairing flawless UI with secure backend infrastructure, I transform 
+  your vision into a powerful digital product.
     </motion.p>
 
     <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -144,7 +145,7 @@ export default function Hero (){
         </div>
         <div>
           <p className="text-[10px] text-gray-400">Experience</p>
-          <p className="text-sm sm:text-base text-white font-bold">2+ Years</p>
+          <p className="text-sm sm:text-base text-white font-bold">3+ Years</p>
         </div>
       </motion.div>
 
