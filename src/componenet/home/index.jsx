@@ -3,7 +3,7 @@ import Navbar from "../nav/index";
 import Hero from "../hero/index";
 import ProjectCard from "../project-section/index";
 import ContactSection from "../contect-section";
-import JourneyTimeline from "../journey-section/index";
+
 import PortFooter from "../footer";
 import TechStackSection from "../tech-stack";
 export default function HomePortfolio() {
@@ -19,7 +19,6 @@ export default function HomePortfolio() {
       <TechStackSection/>
       {/* Contect Start */}
       <ContactSection />
-
       {/* Footer Start */}
       <PortFooter />
     </main>

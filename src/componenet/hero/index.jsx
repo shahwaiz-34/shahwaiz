@@ -14,6 +14,7 @@ import {
   X 
 } from "lucide-react";
 import Shahwaiz_img from '../../assets/shahwaiz.png';
+import Hero_bg from "../../assets/hero-bg.png"
 
 import { Link as ScrollLink } from "react-scroll";
 
@@ -47,12 +48,13 @@ export default function Hero (){
   
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* BACKGROUND ELEMENTS */}
-      <div className="absolute top-0 left-0 w-full h-full ">
+      {/* <div className="absolute top-0 left-0 w-full h-full ">
         
 
         <div className={`absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20`}></div>
-      </div>
+      </div> */}
 
+  
     
 <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-14 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center relative z-10 overflow-hidden lg:overflow-visible">
   
