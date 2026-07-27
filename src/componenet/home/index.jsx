@@ -13,14 +13,13 @@ export default function HomePortfolio() {
       <Navbar />
       {/* Hero start */}
       <Hero />
-      {/* tech stack start */}
-      <TechStackSection/>
       {/* Project Start */}
       <ProjectCard />
+      {/* tech stack start */}
+      <TechStackSection/>
       {/* Contect Start */}
       <ContactSection />
-      {/* About Start */}
-      <JourneyTimeline />
+
       {/* Footer Start */}
       <PortFooter />
     </main>
