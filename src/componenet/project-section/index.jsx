@@ -50,22 +50,22 @@ const ProjectCard = ({ project, index }) => {
       viewport={{ once: true }}
       // Dynamic zIndex completely clears layout stacking bugs during state transition
       whileHover={{ y: -8, zIndex: 40 }}
-      className="relative bg-[#121212] border border-purple-500/20 rounded-3xl p-6 md:p-7 flex flex-col gap-5 group h-full hover:border-purple-500/50 transition-colors duration-300 z-10 isolate will-change-transform"
+      className="ocean-card relative border rounded-3xl p-6 md:p-7 flex flex-col gap-5 group h-full transition-all duration-300 z-10 isolate will-change-transform"
     >
     
       {/* Header */}
       <div className="flex justify-between items-center z-20">
-        <h3 className="text-white py-1 text-xl font-semibold group-hover:text-purple-400 transition-colors">
+        <h3 className="text-white py-1 text-xl font-semibold group-hover:text-cyan-300 transition-colors">
           {project.title}
         </h3>
-        <div className="text-purple-400 opacity-70 group-hover:opacity-100 transition-opacity">
+        <div className="text-cyan-300 opacity-70 group-hover:opacity-100 transition-opacity">
           {project.icon}
         </div>
       </div>
 
       {/* Image Container */}
       <div className="relative aspect-video bg-[#1a1a1a] rounded-xl overflow-hidden flex items-center justify-center border border-white/5 z-20">
-        <div className="absolute inset-0 bg-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none" />
+        <div className="absolute inset-0 bg-cyan-400/10 opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none" />
         <img
           src={project.image}
           alt={project.title}
@@ -83,7 +83,7 @@ const ProjectCard = ({ project, index }) => {
         {project.tags.map((tag) => (
           <span
             key={tag}
-            className="px-3 py-1.5 rounded-full text-[11px] bg-purple-500/10 border border-purple-500/20 uppercase tracking-wider text-purple-300 transition-all duration-300"
+            className="px-3 py-1.5 rounded-full text-[11px] bg-cyan-400/10 border border-cyan-300/20 uppercase tracking-wider text-cyan-200 transition-all duration-300"
           >
             {tag}
           </span>
@@ -112,7 +112,7 @@ const ProjectCard = ({ project, index }) => {
           href={project.LiveDemo}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center gap-2 bg-[#7857FF] hover:bg-[#6744f5] text-white rounded-full uppercase tracking-wider text-xs py-3 cursor-pointer transition-all font-medium border border-purple-400/20"
+          className="ocean-primary flex items-center justify-center gap-2 text-white rounded-full uppercase tracking-wider text-xs py-3 cursor-pointer transition-all font-medium border border-cyan-200/30"
         >
           Live Demo <ExternalLink size={14} />
         </motion.a>
@@ -123,7 +123,7 @@ const ProjectCard = ({ project, index }) => {
 
 export default function ProjectsSection() {
   return (
-    <div className="bg-[#0a0a0a] min-h-screen">
+    <div className="ocean-surface min-h-screen">
       <SabHeader upperText={"My Projects"} lowerText={"My Work"}/>
       <section
         id="projects"
@@ -133,8 +133,8 @@ export default function ProjectsSection() {
         <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.02] pointer-events-none mix-blend-overlay z-0" />
 
         {/* Ambient Glow Effects */}
-        <div className="absolute top-1/4 -right-20 w-96 h-96 bg-purple-600/10 blur-[130px] rounded-full pointer-events-none z-0" />
-        <div className="absolute bottom-1/4 -left-20 w-96 h-96 bg-indigo-600/10 blur-[130px] rounded-full pointer-events-none z-0" />
+        <div className="absolute top-1/4 -right-20 w-96 h-96 bg-cyan-400/10 blur-[130px] rounded-full pointer-events-none z-0" />
+        <div className="absolute bottom-1/4 -left-20 w-96 h-96 bg-blue-500/10 blur-[130px] rounded-full pointer-events-none z-0" />
 
         <div className="max-w-[1400px] mx-auto relative z-10">
           {/* Responsive Grid Layout */}

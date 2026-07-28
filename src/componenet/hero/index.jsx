@@ -46,15 +46,11 @@ export default function Hero (){
 
   return (
   
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
-      {/* BACKGROUND ELEMENTS */}
-      {/* <div className="absolute top-0 left-0 w-full h-full ">
-        
-
-        <div className={`absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20`}></div>
-      </div> */}
-
-  
+    <section
+      className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-cover bg-center"
+      style={{ backgroundImage: `linear-gradient(90deg, rgba(4, 9, 27, 0.92) 0%, rgba(5, 12, 32, 0.78) 46%, rgba(5, 12, 32, 0.35) 100%), url(${Hero_bg})` }}
+    >
+    
     
 <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-14 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center relative z-10 overflow-hidden lg:overflow-visible">
   
@@ -65,13 +61,13 @@ export default function Hero (){
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
     >
-      <span className="inline-block py-1 px-3 rounded-full bg-white/5 border border-white/10 text-indigo-400 text-xs font-bold tracking-widest uppercase mb-4">
+      <span className="inline-block py-1 px-3 rounded-full bg-cyan-400/10 border border-cyan-300/50 text-cyan-300 text-xs font-bold tracking-widest uppercase mb-4 shadow-[0_0_22px_rgba(49,216,237,0.3)]">
         Available for work
       </span>
       {/* Changed text size and leading for better filling */}
       <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-[1.1]">
         Hi, I'm <br />
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-sky-200 to-cyan-300">
           Shahwaiz
         </span>
       </h1>
@@ -86,7 +82,7 @@ export default function Hero (){
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: -40, opacity: 0 }}
           transition={{ duration: 0.3 }}
-          className="text-3xl md:text-4xl lg:text-5xl font-bold text-indigo-500 w-full"
+          className="text-3xl md:text-4xl lg:text-5xl font-bold text-cyan-300 w-full drop-shadow-[0_0_18px_rgba(49,216,237,0.3)]"
         >
           {roles[index]}
         </motion.div>
@@ -105,10 +101,10 @@ export default function Hero (){
     </motion.p>
 
     <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <a href="#projects" className="bg-indigo-600 text-white px-8 py-4 rounded-full font-bold hover:bg-indigo-700 transition-all text-center flex items-center justify-center gap-2">
+            <a href="#projects" className="ocean-primary text-white px-8 py-4 rounded-full font-bold transition-all text-center flex items-center justify-center gap-2 hover:-translate-y-0.5">
               View Projects <Code2 size={18} />
             </a>
-            <a href="#contact" className="px-8 py-4 rounded-full font-bold text-white border border-white/20 hover:bg-white/10 transition-all text-center">
+            <a href="#contact" className="px-8 py-4 rounded-full font-bold text-white border border-cyan-200/40 hover:bg-cyan-300/10 hover:border-cyan-300 transition-all text-center">
               Contact Me
             </a>
           </div>
@@ -123,7 +119,7 @@ export default function Hero (){
     className="relative min-h-[400px] lg:h-[600px] flex items-center justify-center lg:justify-end mt-12 lg:mt-0"
   >
     {/* Scaled the image container for larger screens */}
-    <div className="relative w-full max-w-[320px] sm:max-w-[380px] lg:max-w-[420px] aspect-[3/4] bg-gray-900 rounded-[2rem] border border-white/10 p-2 shadow-indigo-500/20 rotate-3 hover:rotate-0 transition-all duration-500">
+    <div className="relative w-full max-w-[320px] sm:max-w-[380px] lg:max-w-[420px] aspect-[3/4] bg-slate-950/80 rounded-[2rem] border border-cyan-200/30 p-2 shadow-[0_0_45px_rgba(49,216,237,0.25)] rotate-3 hover:rotate-0 transition-all duration-500">
       <div className="w-full h-full bg-zinc-800 rounded-[1.5rem] overflow-hidden relative group">
         <img 
           src={Shahwaiz_img} 
@@ -132,7 +128,7 @@ export default function Hero (){
         />
         <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/90 to-transparent">
           <p className="text-white font-bold text-xl">Shahwaiz</p>
-          <p className="text-indigo-400 text-sm">Web Developer</p>
+          <p className="text-cyan-300 text-sm">Web Developer</p>
         </div>
       </div>
 

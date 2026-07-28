@@ -8,7 +8,7 @@ import PortFooter from "../footer";
 import TechStackSection from "../tech-stack";
 export default function HomePortfolio() {
   return (
-    <main className="bg-[#050505] min-h-screen text-white font-sans selection:bg-indigo-500 selection:text-white">
+    <main className="ocean-surface min-h-screen text-white font-sans selection:bg-cyan-400 selection:text-slate-950">
       {/* Navbar Start */}
       <Navbar />
       {/* Hero start */}

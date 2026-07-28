@@ -69,14 +69,14 @@ const TechStackSection = () => {
   ];
 
   return (
-    <div>
+    <div className="ocean-surface">
       <SubHeader upperText={"Expertise"} lowerText={"Tech Stack & Services"} />
       <section
         id="services"
-        className="min-h-screen w-full flex flex-col justify-center items-center px-4 sm:px-6 lg:px-14 font-sans text-white relative overflow-hidden py-12"
+        className="min-h-screen w-full flex flex-col justify-center items-center px-4 sm:px-6 lg:px-14 font-sans text-white relative isolate overflow-hidden py-12"
       >
-        {/* Background Noise/Overlay */}
-        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 pointer-events-none"></div>
+        <div className="absolute top-1/4 -right-20 h-96 w-96 rounded-full bg-cyan-400/10 blur-[130px] pointer-events-none" />
+        <div className="absolute bottom-0 -left-24 h-80 w-80 rounded-full bg-blue-500/10 blur-[130px] pointer-events-none" />
 
         {/* Centered Wrapper */}
         <div className="max-w-[1400px] w-full mx-auto relative z-10">
@@ -92,9 +92,9 @@ const TechStackSection = () => {
             {/* Card 1: Frontend & Design */}
             <motion.div
               variants={cardVariants}
-              className="group bg-[#161423] border border-[#31255A] hover:border-purple-500/50 rounded-[2.5rem] p-8 md:p-10 flex flex-col h-full transition-all duration-500 hover:shadow-[0_0_30px_-10px_rgba(120,87,255,0.3)]"
+              className="ocean-card group rounded-3xl p-8 md:p-10 flex flex-col h-full transition-all duration-500"
             >
-              <h3 className="text-2xl font-bold mb-8 text-white group-hover:text-purple-300 transition-colors">
+              <h3 className="text-2xl font-bold mb-8 text-white group-hover:text-cyan-300 transition-colors">
                 Frontend & Design
               </h3>
 
@@ -102,9 +102,9 @@ const TechStackSection = () => {
                 {frontendStack.map((tech, index) => (
                   <div
                     key={index}
-                    className="flex items-center gap-3 p-3 rounded-2xl bg-[#1c1a2e]/50 border border-transparent hover:bg-[#201d36] transition-all duration-300"
+                    className="flex items-center gap-3 p-3 rounded-2xl bg-white/5 border border-white/5 hover:bg-cyan-400/10 hover:border-cyan-300/15 transition-all duration-300"
                   >
-                    <div className="flex-shrink-0 w-9 h-9 flex items-center justify-center rounded-xl bg-[#262335] text-purple-400 group-hover:scale-110 transition-transform">
+                    <div className="flex-shrink-0 w-9 h-9 flex items-center justify-center rounded-xl bg-cyan-400/10 text-cyan-300 group-hover:scale-110 transition-transform">
                       {tech.icon}
                     </div>
                     <span className="text-sm font-semibold text-gray-300">
@@ -115,10 +115,10 @@ const TechStackSection = () => {
               </div>
               
               <div className="flex gap-2 mt-auto flex-wrap">
-                <span className="bg-[#7857FF] text-white px-3 py-1.5 rounded-full text-[10px] uppercase tracking-wider font-bold">
+                <span className="ocean-primary text-white px-3 py-1.5 rounded-full text-[10px] uppercase tracking-wider font-bold">
                   Client Side
                 </span>
-                <span className="bg-[#262335] text-gray-400 px-3 py-1.5 rounded-full text-[10px] uppercase tracking-wider font-bold">
+                <span className="bg-white/5 border border-white/10 text-gray-400 px-3 py-1.5 rounded-full text-[10px] uppercase tracking-wider font-bold">
                   Pixel-Perfect
                 </span>
               </div>
@@ -127,9 +127,9 @@ const TechStackSection = () => {
             {/* Card 2: Backend & Systems */}
             <motion.div
               variants={cardVariants}
-              className="group bg-[#161423] border border-[#31255A] hover:border-purple-500/50 rounded-[2.5rem] p-8 md:p-10 flex flex-col h-full transition-all duration-500 hover:shadow-[0_0_30px_-10px_rgba(120,87,255,0.3)]"
+              className="ocean-card group rounded-3xl p-8 md:p-10 flex flex-col h-full transition-all duration-500"
             >
-              <h3 className="text-2xl font-bold mb-8 text-white group-hover:text-purple-300 transition-colors">
+              <h3 className="text-2xl font-bold mb-8 text-white group-hover:text-cyan-300 transition-colors">
                 Backend & Auth
               </h3>
 
@@ -137,9 +137,9 @@ const TechStackSection = () => {
                 {backendStack.map((tech, index) => (
                   <div
                     key={index}
-                    className="flex items-center gap-3 p-3 rounded-2xl bg-[#1c1a2e]/50 border border-transparent hover:bg-[#201d36] transition-all duration-300"
+                    className="flex items-center gap-3 p-3 rounded-2xl bg-white/5 border border-white/5 hover:bg-cyan-400/10 hover:border-cyan-300/15 transition-all duration-300"
                   >
-                    <div className="flex-shrink-0 w-9 h-9 flex items-center justify-center rounded-xl bg-[#262335] text-purple-400 group-hover:scale-110 transition-transform">
+                    <div className="flex-shrink-0 w-9 h-9 flex items-center justify-center rounded-xl bg-cyan-400/10 text-cyan-300 group-hover:scale-110 transition-transform">
                       {tech.icon}
                     </div>
                     <span className="text-sm font-semibold text-gray-300">
@@ -150,10 +150,10 @@ const TechStackSection = () => {
               </div>
               
               <div className="flex gap-2 mt-auto flex-wrap">
-                <span className="bg-[#7857FF] text-white px-3 py-1.5 rounded-full text-[10px] uppercase tracking-wider font-bold">
+                <span className="ocean-primary text-white px-3 py-1.5 rounded-full text-[10px] uppercase tracking-wider font-bold">
                   Server Side
                 </span>
-                <span className="bg-[#262335] text-gray-400 px-3 py-1.5 rounded-full text-[10px] uppercase tracking-wider font-bold">
+                <span className="bg-white/5 border border-white/10 text-gray-400 px-3 py-1.5 rounded-full text-[10px] uppercase tracking-wider font-bold">
                   MERN Stack
                 </span>
               </div>
@@ -162,18 +162,18 @@ const TechStackSection = () => {
             {/* Card 3: Engineering Services */}
             <motion.div
               variants={cardVariants}
-              className="group bg-[#161423] border border-[#31255A] hover:border-purple-500/50 rounded-[2.5rem] p-8 md:p-10 flex flex-col h-full transition-all duration-500 hover:shadow-[0_0_30px_-10px_rgba(120,87,255,0.3)]"
+              className="ocean-card group rounded-3xl p-8 md:p-10 flex flex-col h-full transition-all duration-500"
             >
-              <h3 className="text-2xl font-bold mb-8 text-white group-hover:text-purple-300 transition-colors">
+              <h3 className="text-2xl font-bold mb-8 text-white group-hover:text-cyan-300 transition-colors">
                 Expert Services
               </h3>
               <div className="grid grid-cols-1 gap-3 mb-10 flex-grow">
                 {clientServices.map((service, index) => (
                   <div
                     key={index}
-                    className="flex items-center gap-3 p-3 rounded-2xl bg-[#1c1a2e]/50 border border-transparent hover:bg-[#201d36] transition-all duration-300"
+                    className="flex items-center gap-3 p-3 rounded-2xl bg-white/5 border border-white/5 hover:bg-cyan-400/10 hover:border-cyan-300/15 transition-all duration-300"
                   >
-                    <div className="flex-shrink-0 w-9 h-9 flex items-center justify-center rounded-xl bg-[#262335] text-purple-400 group-hover:scale-110 transition-transform">
+                    <div className="flex-shrink-0 w-9 h-9 flex items-center justify-center rounded-xl bg-cyan-400/10 text-cyan-300 group-hover:scale-110 transition-transform">
                       {service.icon}
                     </div>
                     <span className="text-sm font-semibold text-gray-300">
@@ -183,10 +183,10 @@ const TechStackSection = () => {
                 ))}
               </div>
               <div className="flex gap-2 mt-auto flex-wrap">
-                <span className="bg-[#7857FF] text-white px-3 py-1.5 rounded-full text-[10px] uppercase tracking-wider font-bold">
+                <span className="ocean-primary text-white px-3 py-1.5 rounded-full text-[10px] uppercase tracking-wider font-bold">
                   Solutions
                 </span>
-                <span className="bg-[#262335] text-gray-400 px-3 py-1.5 rounded-full text-[10px] uppercase tracking-wider font-bold">
+                <span className="bg-white/5 border border-white/10 text-gray-400 px-3 py-1.5 rounded-full text-[10px] uppercase tracking-wider font-bold">
                   Optimization
                 </span>
               </div>

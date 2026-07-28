@@ -10,13 +10,13 @@ export default function SabHeader({upperText,lowerText}) {
         viewport={{ once: true }}
         className="mx-auto w-full max-w-[1400px]"
       >
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl min-h-[1.2em] font-black tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500 leading-tight">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl min-h-[1.2em] font-black tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white via-sky-200 to-cyan-300 leading-tight">
           {upperText}
         </h1>
 
         <div className="flex items-center gap-4">
-          <div className="h-[2px] w-8 md:w-16 bg-gradient-to-r from-purple-500 to-transparent"></div>
-          <p className="text-purple-400 uppercase tracking-widest text-xs md:text-sm font-bold">
+          <div className="h-[2px] w-8 md:w-16 bg-gradient-to-r from-cyan-300 to-transparent"></div>
+          <p className="text-cyan-300 uppercase tracking-widest text-xs md:text-sm font-bold">
             {lowerText}
           </p>
         </div>

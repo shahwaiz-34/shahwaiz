@@ -1,5 +1,5 @@
 import React from "react";
-import { LayoutAnimationBuilder, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import {
@@ -63,17 +63,18 @@ const ContactSection = () => {
 
   return (
 
-<div> 
+<div className="ocean-surface">
 
     <SabHeader upperText={"Get In Touch"} lowerText={"Contact Me"} />
   
     <section
       id="contact"
-      className="min-h-screen text-white px-4 sm:px-6 lg:px-14 pb-24 flex flex-col justify-center items-center relative"
+      className="min-h-screen text-white px-4 sm:px-6 lg:px-14 pb-24 flex flex-col justify-center items-center relative isolate overflow-hidden"
     >
-      <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
+      <div className="absolute top-1/4 -right-20 h-96 w-96 rounded-full bg-cyan-400/10 blur-[130px] pointer-events-none" />
+      <div className="absolute bottom-0 -left-24 h-80 w-80 rounded-full bg-blue-500/10 blur-[130px] pointer-events-none" />
 
-      <div className="max-w-[1400px] mx-auto w-full">
+      <div className="max-w-[1400px] mx-auto w-full relative z-10">
         {/* Cards Grid */}
         <motion.div
           variants={containerVariants}
@@ -133,7 +134,7 @@ const ContactSection = () => {
                   placeholder="Name"
                   aria-label="Your Name"
                   required
-                  className="w-full bg-[#1e1e2d] text-gray-200 border border-gray-700/50 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/50 transition-all placeholder-gray-500"
+                  className="w-full bg-white/5 text-gray-200 border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-cyan-300/70 focus:ring-2 focus:ring-cyan-300/20 transition-all placeholder-gray-500"
                 />
                 <input
                   name="from_email"
@@ -141,7 +142,7 @@ const ContactSection = () => {
                   placeholder="Email"
                   aria-label="Your Email"
                   required
-                  className="w-full bg-[#1e1e2d] text-gray-200 border border-gray-700/50 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/50 transition-all placeholder-gray-500"
+                  className="w-full bg-white/5 text-gray-200 border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-cyan-300/70 focus:ring-2 focus:ring-cyan-300/20 transition-all placeholder-gray-500"
                 />
               </div>
 
@@ -151,7 +152,7 @@ const ContactSection = () => {
                 aria-label="Your Message"
                 required
                 rows={4}
-                className="w-full bg-[#1e1e2d] text-gray-200 border border-gray-700/50 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/50 transition-all placeholder-gray-500 resize-none"
+                className="w-full bg-white/5 text-gray-200 border border-white/10 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-cyan-300/70 focus:ring-2 focus:ring-cyan-300/20 transition-all placeholder-gray-500 resize-none"
               />
 
               <motion.button
@@ -160,7 +161,7 @@ const ContactSection = () => {
                 whileTap={!isSending ? { scale: 0.98 } : {}}
                 disabled={isSending}
                 type="submit"
-                className="w-full flex items-center justify-center gap-2 bg-[#6366f1] hover:bg-[#5558e3] disabled:bg-[#6366f1]/70 disabled:cursor-not-allowed text-white font-medium py-3 rounded-lg shadow-lg shadow-indigo-500/20 transition-all duration-200"
+                className="ocean-primary w-full flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed text-white font-medium py-3 rounded-full transition-all duration-200"
               >
                 {isSending ? (
                   <>
@@ -227,7 +228,7 @@ const CardWrapper = ({ title, children }) => (
       visible: { y: 0, opacity: 1 },
     }}
     whileHover={{ y: -5 }}
-    className="bg-[#13131f] border border-gray-800 rounded-3xl p-6 flex flex-col h-full shadow-xl hover:shadow-2xl hover:border-indigo-500/30 transition-all duration-300 relative overflow-hidden"
+    className="ocean-card border rounded-3xl p-6 flex flex-col h-full transition-all duration-300 relative overflow-hidden"
   >
     {/* Content */}
     <div className="relative z-10 flex-grow">
@@ -246,7 +247,7 @@ const CardWrapper = ({ title, children }) => (
 
 const ContactItem = ({ icon, title, content }) => (
   <div className="flex items-center gap-4 group">
-    <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-[#1e1e2d] text-indigo-400 group-hover:bg-[#6366f1] group-hover:text-white transition-colors duration-300">
+    <div className="w-10 h-10 flex items-center justify-center rounded-xl bg-cyan-400/10 text-cyan-300 group-hover:bg-cyan-300 group-hover:text-[#050b1e] transition-colors duration-300">
       {icon}
     </div>
     <div>
@@ -264,7 +265,7 @@ const SocialItem = ({ icon, label, link }) => (
     target="_blank"
     className="flex items-center gap-4 group cursor-pointer"
   >
-    <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-[#1e1e2d] text-indigo-400 group-hover:bg-[#6366f1] group-hover:text-white transition-colors duration-300">
+    <div className="w-10 h-10 flex items-center justify-center rounded-xl bg-cyan-400/10 text-cyan-300 group-hover:bg-cyan-300 group-hover:text-[#050b1e] transition-colors duration-300">
       {icon}
     </div>
     <span className="text-sm text-gray-300 group-hover:text-white transition-colors">
