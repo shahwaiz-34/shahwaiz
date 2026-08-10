@@ -2,11 +2,12 @@
 import React from "react";
 import SabHeader from '../Header';
 import { motion } from "framer-motion";
-import { ShoppingCart, BarChart3, Palette, ExternalLink, Star, Github } from "lucide-react";
+import { ShoppingCart, BarChart3, Palette, ExternalLink, Star, Github, GraduationCap } from "lucide-react";
 
 import myShop_img from "../../assets/my-shop.png";
 import modrenLanging_img from "../../assets/modren-landing.png";
 import albirds_img from "../../assets/albirds.png";
+import master_class from "../../assets/saas.jpg";
 
 const projects = [
   {
@@ -20,13 +21,13 @@ const projects = [
     featured: true, 
   },
   {
-    title: "My Shop",
-    icon: <BarChart3 size={20} />,
-    description: "A modern retail web application built on clean architecture, features seamless API synchronization, and secure, industry-standard authentication middleware.",
-    tags: ["React", "API", "Clerk Auth", "react-router-dom"],
-    image: myShop_img,
-    GitHub: "https://github.com/shahwaiz-34/my-shop",
-    LiveDemo: "https://my-shop-nine-orpin.vercel.app/",
+    title: "Master Class",
+    icon: <GraduationCap size={20} />,
+    description: "My Learnio is a modern Learning Management System (LMS) built with Next.js, Convex, and Tailwind CSS. It allows users to browse, purchase, and access online courses through a secure and responsive interface. It features authentication with Clerk, subscription and payment processing via Stripe, real-time data synchronization.",
+    tags: ["Next.js", "Convex", "Clerk Auth", "Stripe", "Tailwind CSS", "dashboard", "responsive design"],
+    image: master_class,
+    GitHub: "https://github.com/shahwaiz-34/Learnio",
+    LiveDemo: "https://learnio-self.vercel.app/",
     featured: false,
   },
   {
