@@ -2,24 +2,16 @@
 import React from "react";
 import SabHeader from '../Header';
 import { motion } from "framer-motion";
-import { ShoppingCart, BarChart3, Palette, ExternalLink, Star, Github, GraduationCap } from "lucide-react";
+import { ShoppingCart, BarChart3, Palette, ExternalLink, Star, Github, GraduationCap , LayoutDashboard } from "lucide-react";
 
 import myShop_img from "../../assets/my-shop.png";
 import modrenLanging_img from "../../assets/modren-landing.png";
 import albirds_img from "../../assets/albirds.png";
 import master_class from "../../assets/saas.jpg";
+import dashboard_img from "../../assets/dashboard.png";
 
 const projects = [
-  {
-    title: "Responsive E-Commerce Site",
-    icon: <ShoppingCart size={20} />,
-    description: "A high-performance, visually stunning e-commerce storefront optimized for seamless user journeys, rich interactive carousels, and fluid dynamic routing.",
-    tags: ["React", "Tailwind CSS", "Framer Motion", "swiper", "react-router-dom", "react-icon"],
-    image: albirds_img,
-    GitHub: "https://github.com/shahwaiz-34/allbirds",
-    LiveDemo: "https://allbirds-seven.vercel.app/",
-    featured: true, 
-  },
+  
   {
     title: "Master Class",
     icon: <GraduationCap size={20} />,
@@ -30,6 +22,28 @@ const projects = [
     LiveDemo: "https://learnio-self.vercel.app/",
     featured: false,
   },
+
+{
+    title: "Dashboard Analytics",
+    icon: <LayoutDashboard size={20} />,
+    description: "A comprehensive dashboard for visualizing and analyzing key metrics and performance indicators.",
+    tags: ["Next.js", "Tailwind CSS", "Dashboard", "Responsive design","Charts","sooner"],
+    image: dashboard_img,
+    GitHub: "https://github.com/shahwaiz-34/Learnio",
+    LiveDemo: "https://learnio-self.vercel.app/dashboard",
+    featured: false,
+  },
+  {
+    title: "Responsive E-Commerce Site",
+    icon: <ShoppingCart size={20} />,
+    description: "A high-performance, visually stunning e-commerce storefront optimized for seamless user journeys, rich interactive carousels, and fluid dynamic routing.",
+    tags: ["React", "Tailwind CSS", "Framer Motion", "swiper", "react-router-dom", "react-icon"],
+    image: albirds_img,
+    GitHub: "https://github.com/shahwaiz-34/allbirds",
+    LiveDemo: "https://allbirds-seven.vercel.app/",
+    featured: true, 
+  },
+
   {
     title: "Modern Landing Page",
     icon: <Palette size={20} />,
